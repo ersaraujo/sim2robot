@@ -2,14 +2,13 @@
 #include "Network/Network.h"
 
 int main() {
-    NetworkFira fira(20011);  // Substitua pelo IP multicast e porta corretos
+    NetworkFira fira(20011);
     fira_message::Packet receivedPacket;
 
     while (true) {
         receivedPacket = fira.receiveData();
 
-        // Processar o pacote recebido no NetworkFira
-        fira.processData(receivedPacket);  // Simule o processamento dos dados
+        fira.processData(receivedPacket); 
     }
 
     return 0;

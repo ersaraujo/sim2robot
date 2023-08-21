@@ -16,7 +16,7 @@ private:
     std::string ipAddress_;
     int port_;
     
-    fira_message::Packet receivedPacket_;  // Usando a estrutura gerada pelo protobuf
+    fira_message::Packet receivedPacket_;
     std::string processedData_;
     int clientSocket_;
 };
