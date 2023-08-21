@@ -1,5 +1,17 @@
-#ifndef NETWORKFIRA_H
-#define NETWORKFIRA_H
+// NetworkFira.h
+#pragma once
 
+#include "../../pb/command.pb.h"
 
-#endif /* NETWORKFIRA_H */
+class NetworkFira {
+public:
+    explicit NetworkFira(int port);
+    ~NetworkFira();
+
+    fira_message::Packet receiveData();
+    void processData(const fira_message::Packet& packet);
+
+private:
+    int port_;
+    int socket_;
+};

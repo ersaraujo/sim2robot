@@ -1,5 +1,8 @@
-#ifndef NETWORK_H
-#define NETWORK_H
+#pragma once
+
+#include "NetworkFira/NetworkFira.h"
+#include "NetworkRobot/NetworkRobot.h"
+#include "../pb/command.pb.h"
 
 #include <sys/socket.h>
 
@@ -9,5 +12,3 @@ public:
     virtual ~Network();
     void send();
 };
-
-#endif /* NETWORK_H */
