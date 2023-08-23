@@ -1,11 +1,5 @@
 // NetworkFira.cpp
 #include "NetworkFira.h"
-#include <iostream>
-#include <cstring>
-#include <unistd.h>
-#include <arpa/inet.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
 
 NetworkFira::NetworkFira(int port)
     : port_(port), socket_(-1) {
