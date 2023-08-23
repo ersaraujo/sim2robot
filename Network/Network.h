@@ -2,9 +2,13 @@
 
 #include "NetworkFira/NetworkFira.h"
 #include "NetworkRobot/NetworkRobot.h"
-#include "../pb/command.pb.h"
 
+#include <iostream>
+#include <cstring>
+#include <unistd.h>
 #include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 
 class Network {
 public:
