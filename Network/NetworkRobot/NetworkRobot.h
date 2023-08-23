@@ -1,6 +1,7 @@
 // NetworkRobot.h
 #pragma once
 
+#include "../Network.h"
 #include "../../pb/command.pb.h"
 
 class NetworkRobot {

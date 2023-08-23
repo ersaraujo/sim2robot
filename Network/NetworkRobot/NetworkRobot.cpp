@@ -1,11 +1,5 @@
 // NetworkRobot.cpp
 #include "NetworkRobot.h"
-#include <iostream>
-#include <cstring>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
 
 NetworkRobot::NetworkRobot(const std::string& ipAddress, int port)
     : ipAddress_(ipAddress), port_(port), clientSocket_(-1) {
@@ -26,7 +20,7 @@ void NetworkRobot::receiveData(const fira_message::Packet& packet) {
 
 void NetworkRobot::processData() {
     for (const fira_message::Command& command : receivedPacket_.commands().robot_commands()) {
-        // TODO: Processar os dados recebidos
+        
     }
 }
 
